@@ -9,6 +9,8 @@ Il faut également que votre input soit de cette forme :
 -------------------------------------------------------------------------------------------------------------------------
 _________________________________________________________________________________________________________________________
 */
+let fileToUpload = document.getElementById('fileToUpload');
+let imgPreview = document.getElementById('preview');
 
 fileToUpload.addEventListener("change", function () {
 	let input = this;
@@ -18,3 +20,4 @@ fileToUpload.addEventListener("change", function () {
 		imgPreview.setAttribute('src', oFREvent.target.result);
 	};
 })
+
